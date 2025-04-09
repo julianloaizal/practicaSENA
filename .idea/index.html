@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataformas de Control de Versiones</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #24292e;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        h2 {
+            color: #0366d6;
+            border-bottom: 2px solid #0366d6;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+        .platform-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .platform {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            flex: 1;
+            min-width: 300px;
+            transition: transform 0.3s ease;
+        }
+        .platform:hover {
+            transform: translateY(-5px);
+        }
+        .platform h3 {
+            color: #24292e;
+            font-size: 1.8em;
+            margin-top: 0;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        .platform-logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .platform-logo img {
+            height: 80px;
+        }
+        .features {
+            margin-top: 20px;
+        }
+        .features h4 {
+            margin-bottom: 10px;
+            color: #586069;
+        }
+        .feature-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .feature-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .feature-list li:last-child {
+            border-bottom: none;
+        }
+        .feature-list li::before {
+            content: "→ ";
+            color: #0366d6;
+            font-weight: bold;
+        }
+        .comparison {
+            margin-top: 40px;
+            background-color: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f0f4f8;
+            color: #24292e;
+        }
+        tr:hover {
+            background-color: #f9f9f9;
+        }
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            color: #586069;
+            font-size: 0.9em;
+            padding: 20px;
+            border-top: 1px solid #ddd;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #2ea44f;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 15px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #22863a;
+        }
+        @media (max-width: 768px) {
+            .platform {
+                flex: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Plataformas de Control de Versiones</h1>
+        <p>Comparativa de GitHub, GitLab y Bitbucket</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>¿Qué es el Control de Versiones?</h2>
+            <p>El control de versiones es un sistema que registra los cambios realizados en un archivo o conjunto de archivos a lo largo del tiempo, de modo que puedas recuperar versiones específicas más adelante. Estas plataformas proporcionan servicios basados en Git, el sistema de control de versiones distribuido más popular del mundo.</p>
+        </section>
+
+        <section class="platform-container">
+            <div class="platform">
+                <div class="platform-logo">
+                    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png" alt="Logo de GitHub">
+                </div>
+                <h3>GitHub</h3>
+                <p>Adquirida por Microsoft en 2018, GitHub es la plataforma de desarrollo colaborativo más grande del mundo, con más de 73 millones de desarrolladores y más de 200 millones de repositorios.</p>
+                
+                <div class="features">
+                    <h4>Características destacadas:</h4>
+                    <ul class="feature-list">
+                        <li>GitHub Actions para CI/CD</li>
+                        <li>GitHub Pages para hosting</li>
+                        <li>GitHub Copilot (IA para programación)</li>
+                        <li>Integraciones con más de 16,000 aplicaciones</li>
+                        <li>Potente sistema de issues y pull requests</li>
+                        <li>GitHub Discussions y Wikis</li>
+                    </ul>
+                </div>
+                <a href="https://github.com" class="cta-button">Visitar GitHub</a>
+            </div>
+
+            <div class="platform">
+                <div class="platform-logo">
+                    <img src="https://about.gitlab.com/images/press/logo/svg/gitlab-logo-500.svg" alt="Logo de GitLab">
+                </div>
+                <h3>GitLab</h3>
+                <p>GitLab es una plataforma DevOps completa que ofrece repositorios Git con características adicionales como CI/CD integrado, gestión de proyectos y seguridad desde un único lugar.</p>
+                
+                <div class="features">
+                    <h4>Características destacadas:</h4>
+                    <ul class="feature-list">
+                        <li>CI/CD integrado de forma nativa</li>
+                        <li>Opciones de autoalojamiento robustas</li>
+                        <li>Ciclo DevOps completo en una sola plataforma</li>
+                        <li>Gestión de proyectos con tableros Kanban</li>
+                        <li>Análisis de seguridad y dependencias</li>
+                        <li>Métricas de valor empresarial</li>
+                    </ul>
+                </div>
+                <a href="https://gitlab.com" class="cta-button">Visitar GitLab</a>
+            </div>
+
+            <div class="platform">
+                <div class="platform-logo">
+                    <img src="https://wac-cdn.atlassian.com/dam/jcr:e75ffb0e-b3ee-40ca-8659-ecb93675a379/Bitbucket@2x-blue.png" alt="Logo de Bitbucket">
+                </div>
+                <h3>Bitbucket</h3>
+                <p>Desarrollada por Atlassian, Bitbucket se integra perfectamente con otras herramientas como Jira y Trello, lo que la convierte en una opción ideal para equipos que ya utilizan el ecosistema Atlassian.</p>
+                
+                <div class="features">
+                    <h4>Características destacadas:</h4>
+                    <ul class="feature-list">
+                        <li>Integración perfecta con Jira y Trello</li>
+                        <li>Bitbucket Pipelines para CI/CD</li>
+                        <li>Repositorios privados ilimitados</li>
+                        <li>Permisos granulares por rama</li>
+                        <li>Soporte para Git LFS (Large File Storage)</li>
+                        <li>Despliegues a AWS, Azure y GCP</li>
+                    </ul>
+                </div>
+                <a href="https://bitbucket.org" class="cta-button">Visitar Bitbucket</a>
+            </div>
+        </section>
+
+        <section class="comparison">
+            <h2>Comparativa de Plataformas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Característica</th>
+                        <th>GitHub</th>
+                        <th>GitLab</th>
+                        <th>Bitbucket</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Repositorios privados gratuitos</td>
+                        <td>Ilimitados</td>
+                        <td>Ilimitados</td>
+                        <td>Hasta 5 usuarios</td>
+                    </tr>
+                    <tr>
+                        <td>CI/CD integrado</td>
+                        <td>GitHub Actions</td>
+                        <td>GitLab CI/CD (nativo)</td>
+                        <td>Bitbucket Pipelines</td>
+                    </tr>
+                    <tr>
+                        <td>Hosting de páginas web</td>
+                        <td>GitHub Pages</td>
+                        <td>GitLab Pages</td>
+                        <td>Limitado</td>
+                    </tr>
+                    <tr>
+                        <td>Autoalojamiento</td>
+                        <td>GitHub Enterprise</td>
+                        <td>GitLab CE/EE</td>
+                        <td>Bitbucket Data Center</td>
+                    </tr>
+                    <tr>
+                        <td>Gestión de proyectos</td>
+                        <td>Básica</td>
+                        <td>Avanzada</td>
+                        <td>Con Jira</td>
+                    </tr>
+                    <tr>
+                        <td>Revisión de código</td>
+                        <td>Pull Requests</td>
+                        <td>Merge Requests</td>
+                        <td>Pull Requests</td>
+                    </tr>
+                    <tr>
+                        <td>Wiki</td>
+                        <td>Sí</td>
+                        <td>Sí</td>
+                        <td>Sí</td>
+                    </tr>
+                    <tr>
+                        <td>Comunidad</td>
+                        <td>Muy grande</td>
+                        <td>Grande</td>
+                        <td>Mediana</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>¿Cuál elegir?</h2>
+            <p>Cada plataforma tiene sus propias fortalezas:</p>
+            <ul>
+                <li><strong>GitHub</strong> es ideal si buscas la mayor comunidad de desarrolladores y una plataforma centrada en código abierto.</li>
+                <li><strong>GitLab</strong> es perfecto si necesitas una solución DevOps completa con CI/CD integrado de forma nativa.</li>
+                <li><strong>Bitbucket</strong> es la mejor opción si tu equipo ya utiliza herramientas de Atlassian como Jira o Trello.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 - Comparativa de Plataformas Git | Creado con fines educativos</p>
+    </footer>
+</body>
+</html>
